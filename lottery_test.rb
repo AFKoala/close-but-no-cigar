@@ -1,9 +1,11 @@
-require "minitest/autorun"
+require 'minitest/autorun'
+require_relative 'lottery.rb'
 
-class TestLottery < Minitest::Test
+class TestCigar < Minitest::Test
 
-	def test_1_1
-		assert_equal(3+2, 4+1)
+	def test_winning_num_match
+		my_num = '1234'
+		win_nums = ['7325', '4094', '1234', '6924', '0157']
+		assert_equal(my_num, lotto(my_num, win_nums))
 	end
-	
 end
