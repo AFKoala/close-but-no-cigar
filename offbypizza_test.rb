@@ -26,4 +26,12 @@ class TestOff < Minitest::Test
 		p my_piz
 		p other_piz
 	end
+
+	def test_pizza_4
+		my_piz = 'datacrunch'.split(//)
+		other_piz = 'data_munch'.split(//)
+		assert_equal(8, pizzatime(my_piz, other_piz))
+		p my_piz
+		p other_piz
+	end
 end
