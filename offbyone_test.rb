@@ -9,4 +9,10 @@ class TestOff < Minitest::Test
 		win_num = ['9234', '1534', '1274']
 		assert_equal(win_num, raffle(my_num, win))
 	end
+	def test_partial_match_2
+		my_num = '12345'
+		win = ['73251', '40394', '61924', '01537', '92534', '15345', '11274', '72435']
+		win_num = ['9234', '1534', '1274']
+		assert_equal(win_num, raffle(my_num, win))
+	end
 end
